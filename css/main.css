@@ -1,0 +1,314 @@
+/*universal*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:#211C5A;
+    
+}
+
+#bgvid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw; 
+    min-height: 100vh;
+    z-index:-5;
+}
+
+#bgimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index:-5;
+}
+
+.initialH{
+    display:none;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+}
+
+
+#wrapper{
+    max-width:1200px;
+    margin:0 auto;
+    float:left;
+    height:100%;
+}
+
+h2{
+    color:white;
+    font-family:'Shrikhand', serif;
+    letter-spacing: 130%;
+    font-size:5em;
+    line-height: 90%;
+}
+
+#content p{
+    font-family:'Roboto', sans-serif;
+    color:white;
+}
+
+#mutebutton{
+    position:fixed;
+    width:5vw;
+    bottom:5%;
+    right:5%;
+    cursor:pointer;
+    transition: width .2s ease;
+
+}
+
+#replay{
+    position:fixed;
+    width:5vw;
+    bottom:5.5%;
+    right:13%;
+    cursor:pointer;
+    transition: width .2s ease;
+
+}
+
+#mutebutton:hover{
+    width:6vw;
+    transition: width .2s ease;
+}
+
+#replay:hover{
+    width:6vw;
+    transition: width .2s ease;
+}
+/*navigation*/
+
+#header{
+    height:100%;
+    margin-top:5%;
+}
+.layout{
+    background-color: black;
+}
+
+nav{
+    height:100%;
+    background-color:#211C5A;
+    margin-top:10px;
+    box-shadow: 7px 7px black;
+    cursor:pointer;
+}
+
+#expand{
+    margin-top:0;
+    height:100%;
+    background-color:white;
+}
+
+nav p{
+    margin:0 auto;
+    text-align: center;
+    color:white;
+    font-size: 130%;
+}
+
+.link{
+    color:#211C5A;
+}
+
+.link:hover{
+    color:white;
+    background-color:#211C5A;
+}
+
+.navlink{
+    color:white;
+    background-color:#211C5A;
+}
+
+.navlink:hover{
+    color:#211C5a;
+    background-color:white;
+}
+
+.cta{
+    font-family: 'Roboto Condensed';
+    text-decoration:none;
+    color:white;
+    font-size: 3em;
+}
+
+
+.cta:hover{
+    font-family: 'Roboto Condensed';
+    text-decoration:none;
+    color:#211C5A;
+    background-color:white;
+    font-size: 3em;
+}
+/*content*/
+
+#content{
+    margin-left:2%;
+    padding-left:3%;
+    animation:textenter 1s;
+}
+
+#bg{
+    position:absolute;
+    height:100vh;
+    background-color:#211C5a;
+    opacity:.3;
+    z-index:-1;
+}
+
+#survey{
+}
+/*logospin*/
+
+.logo{
+    position:absolute;
+    float:none;
+}
+
+
+#logo{
+    height:13vw;
+    cursor:pointer;
+    position:relative;
+}
+
+#logo:after{
+    display: block;
+	clear: both;
+	content: “”;
+	height:0;
+	overflow:hidden;
+}
+
+#word{
+    z-index:1;
+    top:-7px;
+    left:-7px;
+}
+#blue{
+    top:-7px;
+    left:-7px;
+
+}
+#black{
+    z-index:-1;
+}
+
+.rotate{
+    transform:rotate(30deg) !important;
+    transition: transform 1s ease;
+}
+
+#mobilehead{
+    display:none;
+}
+/*ANIMATION*/
+
+@keyframes textenter {
+    from {opacity: 0;margin-left:0%;}
+    to {opacity: 1;margin-left:2%;}
+}
+
+@media only screen and (max-width: 1300px) {
+    #bgvid{
+        width:1300px;
+        top: 0;
+        left: 0;
+        position:fixed;
+    }   
+}
+
+@media only screen and (max-width: 900px) {
+    nav p{
+        font-size:.8em;
+    }   
+}
+
+@media only screen and (max-width: 550px) {
+    #bg{
+        display:none;
+    }  
+    
+    #logo{
+        height:30vw;
+        position:static;
+        display:none;
+    }
+    #bgvid{
+        position:fixed;
+        right:50%;
+    }
+    
+    nav p{
+        font-size:
+            2em;
+        
+    }
+    
+    nav{
+    height:100%;
+    background-color:#211C5A;
+    margin-top:10px;
+    box-shadow: 0px 7px black;
+    cursor:pointer;
+}
+    
+    #mutebutton{
+        display:none;
+        position:fixed;
+        bottom:5%;
+        width:20%;
+    }
+    
+     
+    #mutebutton:hover{
+        position:fixed;
+        bottom:5%;
+        width:20%;
+    }
+    
+    #bgimg{
+        display:none;
+    }
+    
+    #mobilehead{
+        display:block;
+        width:100%;
+        padding-left:5%;
+    }
+    
+    
+    #mobilelogo{
+        width:80%;
+    }
+    
+    .initialH{
+        display:block;
+    }
+    
+    h2{
+        font-size:3em;
+        letter-spacing:.1em;
+    }
+    
+}
+
+
+
+
+
+

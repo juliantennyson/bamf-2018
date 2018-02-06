@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="utf-8">
+  <title>BAMF 2018</title>
+  <meta name="description" content="">
+  <meta name="author" content="Bellingham Arts and Music Festival">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- FONT––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400|Shrikhand" rel="stylesheet">
+    <!-- CSS–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" type="image/ico" href="css/img/favicon.ico">
+
+  <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+    
+
+$(document).ready(function(){
+
+$("video").prop('muted', true);
+$("#mute").attr("src","css/img/mute.svg");
+
+$("#mutebutton").click( function (){
+    if( $("video").prop('muted') )
+    {
+        $("video").prop('muted', false);
+        $("#mute").attr("src","css/img/unmute.svg");
+
+    }
+
+    else {
+    $("video").prop('muted', true);
+    $("#mute").attr("src","css/img/mute.svg");
+
+    }
+
+});
+    
+$("#replaybutton").click(function(){
+    var vid = document.getElementById("bgvid");
+    vid.currentTime = 0;
+})
+    
+    });
+    
+    </script>
+    
+</head>
+
+<!-- -------------------------
+------------------------------
+----------PAGE ------------
+------------------------------
+------------------------------>
+    <body>
+<div id="wrapper" class="twelve columns">
+
+    <video autoplay muted loop id="bgvid">
+  <source src="css/video/bamfvid.mp4" type="video/mp4">
+    </video>
+    <div id="mutebutton" class="homebutton">
+    <img id="mute" src="css/img/mute.svg"></div>
+    
+    <div id="replay" class="homebutton">
+    <img id="replaybutton" src="css/img/replay.svg"></div>
+<!-- -------------------------
+------------------------------
+----------NAVIGATION ---------
+------------------------------
+------------------------------>
+    <div id="header" class="two columns">
+                    <div id="header">
+                    </div>
+
+                    <script>
+                    $(function(){
+                      $("#header").load("headerhome.html");
+                    });
+                    </script>
+    </div>
+    
+<!-- -------------------------
+------------------------------
+----------PAGE CONTENT--------
+------------------------------
+------------------------------>
+    
+            <div id=footer style="display:none">&copy; BAMF 2018</div>
+
+</div>
+        
+
+    
+    
+<!-- -------------------------
+------------------------------
+----------END ----------------
+------------------------------
+------------------------------>
+</body>
+</html>

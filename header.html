@@ -1,0 +1,58 @@
+<script>
+$(document).ready(function(){
+        
+ $('#word').mouseenter(function(){
+     $('#blue').addClass("rotate");
+     $('#black').addClass("rotate");
+
+     $(this).css("pointer-events", "none");
+     
+     setTimeout(function(){
+    $('#blue').removeClass("rotate");
+    $('#black').removeClass("rotate");
+
+     $('#word').css("pointer-events", "auto");
+
+     }, 1000)
+ });
+      
+         
+$('#nav').click(function(){
+    $('#expand').slideToggle(400);
+    });
+    
+});
+
+</script>        
+
+<a href="index.html">
+            
+            <div id="mobilehead"><img id="mobilelogo" src="css/img/mobilelogo.svg"></div>
+            
+                <div id="logo">
+                    <img id="word" class="logo" src="css/img/bword.svg">
+                    <img id="blue" class="logo"  src="css/img/bblue.svg">
+                    <img id="black" class="logo" src="css/img/bblack.svg">
+                </div>
+                </a>
+                
+                <nav id="nav">
+                    <p class="navlink">NAVIGATION</p>
+                    
+                </nav>
+                <nav id="expand">
+                   
+                    <a href="getinvolved.html"><p id="involved" class="link">GET INVOLVED</p></a>
+                    
+<a href="tickets.html"><p id="tickets" class="link">TICKETS</p></a>
+                   
+<a href="lineup.html"><p id="lineup" class="link">LINEUP</p></a>
+                   
+<a href="about.html"><p id="about" class="link">ABOUT</p></a>
+                     
+<a href="gallery.html"><p id="about" class="link">GALLERY</p></a>
+                     
+<a href="checklist.html"><p id="checklist" class="link">BAMF CHECKLIST</p></a>
+
+                </nav>
+    
