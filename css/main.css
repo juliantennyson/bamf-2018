@@ -27,6 +27,7 @@ body{
     min-width: 100%; 
     min-height: 100%;
     z-index:-5;
+    opacity:.6;
 }
 
 .initialH{
@@ -88,6 +89,26 @@ h2{
 #replay:hover{
     width:6vw;
     transition: width .2s ease;
+}
+
+
+.dead{
+    width:100%;
+    height:100%;
+    background-color:darkgray;
+    opacity:.5;
+    
+}
+
+#halftone{
+    position:fixed;
+    left:-15%;
+    top:0;
+    width:420px;
+    height:100vh;
+    background-image: url(img/halftone.png);
+    background-size:cover;
+    z-index:-2;
 }
 /*navigation*/
 
@@ -163,11 +184,12 @@ nav p{
 }
 
 #bg{
+    display:none;
     position:absolute;
-    height:100vh;
+    height:100%;
     background-color:#211C5a;
     opacity:.3;
-    z-index:-1;
+    z-index:-2;
 }
 
 #survey{
@@ -234,8 +256,26 @@ nav p{
 
 @media only screen and (max-width: 900px) {
     nav p{
-        font-size:.8em;
+        font-size:1.3em;
     }   
+    
+    #logo{
+    height:22vw;
+    cursor:pointer;
+    position:relative;
+    }
+    
+        #halftone{
+    position:fixed;
+    left:-15%;
+    top:0;
+    width:300px;
+    height:100vh;
+    background-image: url(img/halftone.png);
+    background-size:cover;
+    z-index:-2;
+
+}
 }
 
 @media only screen and (max-width: 550px) {
@@ -304,6 +344,10 @@ nav p{
         font-size:3em;
         letter-spacing:.1em;
     }
+    
+    #halftone{
+ display:none;
+}
     
 }
 
