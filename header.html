@@ -1,4 +1,11 @@
 <script>
+    
+    if (top.location.pathname === '/index.html')
+{
+   $('#expand').addClass('initialH');
+}
+    
+    
 $(document).ready(function(){
         
  $('#word').mouseenter(function(){
@@ -21,7 +28,11 @@ $('#nav').click(function(){
     $('#expand').slideToggle(400);
     });
     
-});
+
+    
+    
+    
+    });
 
 </script>        
 
