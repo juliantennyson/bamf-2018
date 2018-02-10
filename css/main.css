@@ -160,6 +160,22 @@ nav p{
     background-color:white;
 }
 
+#socmed{
+    width:100%;
+    height:100%;
+    padding-top:14%;
+    margin:0 auto;
+}
+
+.socmed{
+    width:20%;
+    margin:0 auto;
+    transition: width .2s ease;
+    padding-left:14%;
+padding-right:14%;
+    
+}
+
 .cta{
     font-family: 'Roboto Condensed';
     text-decoration:none;
@@ -175,6 +191,8 @@ nav p{
     background-color:white;
     font-size: 3em;
 }
+
+
 /*content*/
 
 #content{
@@ -356,6 +374,26 @@ nav p{
     #expand{
         display:none;
     }
+    
+    .socmed{
+    padding-left:14%;
+padding-right:14%;
+    
+    }
+    
+    nav p{
+        
+    padding:5%;
+}
+
+    .dead{
+    width:90%;
+    height:80%;
+    background-color:darkgray;
+    opacity:.5;
+}
+
+
     
 }
 

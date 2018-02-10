@@ -69,3 +69,29 @@ $('#nav').click(function(){
 
                 </nav>
     
+
+<div id="socmed">
+    
+    <a href="https://www.facebook.com/bellinghamartsandmusicfest/" target="_blank"><img id="fb" class="socmed" src='css/img/fbicon.svg'></a>
+    
+    <a href="https://www.instagram.com/bamf.bham/" target="_blank"><img id="ig" class="socmed" src='css/img/igicon.svg'></a>
+
+    <script>
+    $('#fb').mouseenter(function(){
+    $(this).attr("src","css/img/fbhover.svg");
+    });
+        
+    $('#fb').mouseleave(function(){
+    $(this).attr("src","css/img/fbicon.svg");
+    });
+        
+    $('#ig').mouseenter(function(){
+    $(this).attr("src","css/img/ighover.svg");
+    });
+        
+    $('#ig').mouseleave(function(){
+    $(this).attr("src","css/img/igicon.svg");
+    });
+    </script>
+
+</div>
