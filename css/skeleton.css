@@ -406,11 +406,11 @@ there.
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-    .two.columns                  { width: 22.66666667%;            }
+    .two.columns                  { width: 22%;            }
   .four.columns                   { width: 30.6666666667%; }
     
     .nine.columns{
-        width:76.333333334%;
+        width:65.3333%;
     }
     
 }
@@ -419,6 +419,8 @@ there.
 @media (min-width: 900px) {
     .two.columns                  { width: 13.3333333333%; }            
   .four.columns                   { width: 30.6666666667%; }
+    
+    
 }
 
 /* Larger than desktop */
