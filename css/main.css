@@ -49,11 +49,12 @@ a:hover{
 }
 
 h2{
-    color:white;
-    font-family:'Shrikhand', serif;
+    color:#fdd032;
+    font-family:'Titillium Web', sans-serif;
     letter-spacing: 130%;
     font-size:5em;
     line-height: 90%;
+    text-shadow: 3px 3px #f44730;
 }
 
 #content p{

@@ -409,6 +409,10 @@ there.
     .two.columns                  { width: 22.66666667%;            }
   .four.columns                   { width: 30.6666666667%; }
     
+    .nine.columns{
+        width:76.333333334%;
+    }
+    
 }
 
 /* Larger than tablet */
