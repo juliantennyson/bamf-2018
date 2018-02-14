@@ -1,5 +1,11 @@
 /*universal*/
 
+/*TEMP*/
+.mobilesurvey{
+    display:none;
+}
+/*TEMP*/
+
 *{
     margin:0;
     padding:0;
@@ -163,8 +169,10 @@ nav p{
 #socmed{
     width:100%;
     height:100%;
-    padding-top:14%;
-    margin:0 auto;
+    margin-top:10%;
+    padding-top:5%;
+    box-shadow:7px 7px black;
+    background-color:#211C5a;
 }
 
 .socmed{
@@ -378,7 +386,11 @@ padding-right:14%;
     .socmed{
     padding-left:14%;
 padding-right:14%;
+    padding-bottom:5%;
     
+    }
+    #socmed{
+        box-shadow:0px 7px black;
     }
     
     nav p{
@@ -393,8 +405,17 @@ padding-right:14%;
     opacity:.5;
 }
 
+    .survey{
+        display:none;
+    }
 
+    .mobilesurvey a{
+        font-size:5em;
+    }
     
+    .mobilesurvey a:hover{
+        font-size:5em;
+    }
 }
 
 
