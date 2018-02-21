@@ -1,9 +1,6 @@
 /*universal*/
 
 /*TEMP*/
-.mobilesurvey{
-    display:none;
-}
 /*TEMP*/
 
 *{
@@ -200,13 +197,16 @@ padding-right:14%;
     font-size: 3em;
 }
 
-
+.mcta{
+   display:none;
+}
 /*content*/
 
 #content{
     margin-left:2%;
     padding-left:3%;
     animation:textenter 1s;
+
 }
 
 #bg{
@@ -271,6 +271,8 @@ padding-right:14%;
     to {opacity: 1;margin-left:2%;}
 }
 
+/*MEDIA QUERIES*/
+
 @media only screen and (max-width: 1300px) {
     #bgvid{
         width:1300px;
@@ -281,6 +283,8 @@ padding-right:14%;
 }
 
 @media only screen and (max-width: 900px) {
+    
+    
     nav p{
         font-size:1.3em;
     }   
@@ -305,6 +309,13 @@ padding-right:14%;
 }
 
 @media only screen and (max-width: 550px) {
+
+    #content{
+        margin-bottom:30%;
+        animation:none;
+        margin-left:0;
+    }
+    
     #bg{
         display:none;
     }  
@@ -331,7 +342,12 @@ padding-right:14%;
     margin-top:10px;
     box-shadow: 0px 7px black;
     cursor:pointer;
+    
 }
+    
+    #expand{
+        margin-bottom:30%;
+    }
     
     #mutebutton{
         display:none;
@@ -353,7 +369,7 @@ padding-right:14%;
     
     #mobilehead{
         display:block;
-        width:100%;
+        width:95%;
         padding-left:5%;
     }
     
@@ -386,11 +402,18 @@ padding-right:14%;
     .socmed{
     padding-left:14%;
 padding-right:14%;
-    padding-bottom:5%;
+    padding-bottom:0%;
+        margin-bottom:0%;
+        position:relative;
+        bottom:40%;
+        width:20%;
     
     }
-    #socmed{
-        box-shadow:0px 7px black;
+    #socmed{       
+        position:fixed;
+        bottom:0;
+        height:10%;
+        background:none;;
     }
     
     nav p{
@@ -415,6 +438,27 @@ padding-right:14%;
     
     .mobilesurvey a:hover{
         font-size:5em;
+    }
+    
+.mcta{
+    font-family: 'Roboto Condensed';
+    text-decoration:none;
+    color:white;
+    font-size: 3em;
+    display:block;
+}
+
+
+.mcta:hover{
+    font-family: 'Roboto Condensed';
+    text-decoration:none;
+    color:#211C5A;
+    background-color:white;
+    font-size: 3em;
+}
+    
+    .cta{
+        display:none;
     }
 }
 
