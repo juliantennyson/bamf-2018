@@ -1,14 +1,16 @@
 <script>
     
-    if (top.location.pathname === '/index.html')
+    if (top.location.pathname === '/index.html' || top.location.pathname === '/')
 {
    $('#expand').addClass('initialH');
+$('#datelink').addClass('initialH');
 }
     
-    if (top.location.pathname === '/')
+    if (top.location.pathname !== '/index.html' && top.location.pathname !== '/')
 {
-   $('#expand').addClass('initialH');
+$('#datelink').slideDown(1000);
 }
+    
     
 $(document).ready(function(){
         
@@ -46,12 +48,15 @@ $('#nav').click(function(){
             
             <div id="mobilehead"><img id="mobilelogo" src="css/img/mobilelogo.svg"></div>
             
-                <div id="logo">
+                <div id="logo" title="be a BAMF!">
                     <img id="word" class="logo" src="css/img/bword.svg">
                     <img id="blue" class="logo"  src="css/img/bblue.svg">
                     <img id="black" class="logo" src="css/img/bblack.svg">
                 </div>
                 </a>
+                <a title="link to map" target="_blank" href="https://www.google.com/maps/place/Lookout+Arts+Quarry/@48.6405778,-122.3599909,17z/data=!3m1!4b1!4m5!3m4!1s0x54850a5b89e91183:0xe65db2b2fed132d0!8m2!3d48.6405778!4d-122.3578022" >
+                    
+               <h1 id="datelink" class="date2 initialH">May 12-13, 2018<br>Noon to Noon at the Lookout Arts Quarry</h1></a>
                 
                 <nav id="nav">
                     <p class="navlink">NAVIGATION</p>
@@ -97,5 +102,8 @@ $('#nav').click(function(){
     $(this).attr("src","css/img/igicon.svg");
     });
     </script>
+    
+    
 
 </div>
+

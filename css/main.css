@@ -59,6 +59,32 @@ h2{
     line-height: 90%;
     text-shadow: 3px 3px #f44730;
 }
+#dateinfo{
+    transition:margin .3s ease;
+}
+#dateinfo:hover{
+    margin-left:5%;
+    
+}
+#date{
+    padding-top:15%;
+    font-size:400%;
+}
+.date{
+    font-size:2em;
+   
+    
+}
+
+.date2{
+    margin-top:7%;
+    color:white;
+    padding:4%;
+    font-size:1em;
+    background-color:#211C5A;
+    box-shadow:7px 7px black;
+    text-align: center;
+}
 
 #content p{
     font-family:'Roboto', sans-serif;
@@ -112,6 +138,7 @@ h2{
     background-image: url(img/halftone.png);
     background-size:cover;
     z-index:-2;
+    opacity:.7;
 }
 /*navigation*/
 
@@ -394,6 +421,12 @@ padding-right:14%;
  display:none;
 
 }
+    #dateinfo{
+        display:none;
+    }
+    #datelink{box-shadow:none;
+    background-color:white;
+    color:#211C5a}
     
     #expand{
         display:none;
