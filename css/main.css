@@ -59,6 +59,13 @@ h2{
     line-height: 90%;
     text-shadow: 3px 3px #f44730;
 }
+
+h3{
+    font-family:'Roboto', sans-serif;
+    color:white;
+    font-weight:700;
+    letter-spacing: 2px;
+    }
 #dateinfo{
     transition:margin .3s ease;
 }
@@ -86,11 +93,40 @@ h2{
     text-align: center;
 }
 
+
+.download{
+    color:white;
+    font-family:'Roboto', sans-serif;
+    font-size:1.5em;
+    text-decoration: underline;
+}
+
+.download:hover{
+    color:#211C5A;
+    background-color:white;
+}
+#content{
+    padding-bottom:15%;
+    height:100vh;
+    overflow:scroll;
+}
 #content p{
     font-family:'Roboto', sans-serif;
     color:white;
 }
 
+.walltext{
+    background-color:white;
+    color:#211C5a !important;
+    padding:10px;
+}
+
+.bold{
+    font-weight:700;
+}
+.mobile{
+    display:none;
+}
 #mutebutton{
     position:fixed;
     width:5vw;
@@ -341,20 +377,21 @@ padding-right:14%;
         margin-bottom:30%;
         animation:none;
         margin-left:0;
+        height:100%;
     }
     
     #bg{
-        display:none;
+        display:block;
     }  
+    
+    #bgvid{
+        display:none;
+    }
     
     #logo{
         height:30vw;
         position:static;
         display:none;
-    }
-    #bgvid{
-        position:fixed;
-        right:50%;
     }
     
     nav p{
@@ -391,7 +428,8 @@ padding-right:14%;
     }
     
     #bgimg{
-        display:none;
+        display:block;
+        opacity:.3;
     }
     
     #mobilehead{
@@ -492,6 +530,16 @@ padding-right:14%;
     
     .cta{
         display:none;
+    }
+    .mobile{
+        display:block;
+    }
+    .desktop{
+        display:none;
+    }
+    .walltext{
+        margin:0;
+        
     }
 }
 
