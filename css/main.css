@@ -109,6 +109,7 @@ h3{
     padding-bottom:15%;
     height:100vh;
     overflow:scroll;
+    position:relative;
 }
 #content p{
     font-family:'Roboto', sans-serif;
@@ -478,13 +479,15 @@ padding-right:14%;
         position:relative;
         bottom:40%;
         width:20%;
+       
     
     }
     #socmed{       
         position:fixed;
         bottom:0;
         height:10%;
-        background:none;;
+        background:none;
+         z-index:100;
     }
     
     nav p{
