@@ -247,7 +247,7 @@ padding-right:14%;
 
 .cta{
     font-family: 'Roboto Condensed';
-    text-decoration:none;
+    text-decoration:underline;
     color:white;
     font-size: 3em;
 }
@@ -516,7 +516,7 @@ padding-right:14%;
     
 .mcta{
     font-family: 'Roboto Condensed';
-    text-decoration:none;
+    text-decoration:underline;
     color:white;
     font-size: 3em;
     display:block;
