@@ -284,6 +284,15 @@ padding-right:14%;
 
 #survey{
 }
+
+#content div a img{
+float:left;
+padding:1%;
+}
+
+#content div a img:hover{
+opacity:.8;
+}
 /*logospin*/
 
 .logo{
