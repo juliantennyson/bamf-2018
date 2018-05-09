@@ -280,6 +280,25 @@ padding-right:14%;
     background-color:#211C5a;
     padding:10px;
 }
+
+#sponsors{
+    position:fixed;
+    width:60vw;
+    height:100px;
+    bottom:10px;
+    left:20vw;
+}
+
+.sponsor{
+    float:left;
+    width:5vw;
+    padding:10px;
+    color:white;
+}
+
+.sponsor:hover{
+    opacity:.7;
+}
 /*content*/
 
 #content{
@@ -569,6 +588,27 @@ padding-right:14%;
         margin:0;
         
     }
+    
+#sponsors{
+    position:fixed;
+    width:100%;
+    height:50px;
+    top:95vw;
+    left:0;
+    z-index:-5;
+}
+
+.sponsor{
+    float:left;
+    width:20vw;
+    padding:10px;
+    color:white;
+    height:auto;
+}
+
+.sponsor:hover{
+    opacity:.7;
+}
 }
 
 
