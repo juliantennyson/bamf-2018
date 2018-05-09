@@ -217,6 +217,17 @@ nav p{
     background-color:#211C5A;
 }
 
+.sublink{
+    color:white;
+    font-size:90%;
+    background-color:#211C5A;
+}
+
+.sublink:hover{
+    color:#211C5A;
+    background-color:white;
+}
+
 .navlink{
     color:white;
     background-color:#211C5A;
@@ -263,6 +274,11 @@ padding-right:14%;
 
 .mcta{
    display:none;
+}
+
+.aboutpage{
+    background-color:#211C5a;
+    padding:10px;
 }
 /*content*/
 
