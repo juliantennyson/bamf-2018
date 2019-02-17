@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
 
-<!-- CODED WITH LOVE BY JULIAN TENNYSON ;* ––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>BAMF 2018</title>
-    <meta name="description" content="Bellingham Arts and Music Festival returns in 2018 at the Lookout Arts Quarry. Lineup coming soon!">
-    <meta name="author" content="Bellingham Arts and Music Festival">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="og:image" content="css/img/involve.jpg">
-     <meta name="og:description" content="Bellingham Arts and Music Festival returns in 2018 at the Lookout Arts Quarry. Lineup coming soon!">
+
+  <meta charset="utf-8">
+  <title>BAMF 2019</title>
+  <meta name="description" content="">
+  <meta name="author" content="Bellingham Arts and Music Festival">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- FONT––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Titillium+Web:700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|IBM+Plex+Sans:400,400i,700,700i|Krona+One" rel="stylesheet">
     <!-- CSS–––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
@@ -30,35 +27,6 @@
     
     <script>
     
-
-$(document).ready(function(){
-
-$("video").prop('muted', true);
-$("#mute").attr("src","css/img/mute.svg");
-
-$("#mutebutton").click( function (){
-    if( $("video").prop('muted') )
-    {
-        $("video").prop('muted', false);
-        $("#mute").attr("src","css/img/unmute.svg");
-
-    }
-
-    else {
-    $("video").prop('muted', true);
-    $("#mute").attr("src","css/img/mute.svg");
-
-    }
-
-});
-    
-$("#replaybutton").click(function(){
-    var vid = document.getElementById("bgvid");
-    vid.currentTime = 0;
-})
-    
-    });
-    
     </script>
     
 </head>
@@ -69,64 +37,31 @@ $("#replaybutton").click(function(){
 ------------------------------
 ------------------------------>
     <body>
-        <img class="mobile" src="css/img/index.jpg" id="bgimg" style="opacity:1; min-width:150%; left:-240px;">
-<div id="wrapper" class="twelve columns">
+        
 
-    <video autoplay muted loop id="bgvid">
-  <source src="css/video/bamfvid.mp4" type="video/mp4">
-    </video>
-    <div id="mutebutton" class="homebutton">
-    <img id="mute" src="css/img/mute.svg"></div>
-    
-    <div id="replay" class="homebutton">
-    <img id="replaybutton" src="css/img/replay.svg"></div>
-    
-<!-- -------------------------
-------------------------------
-----------NAVIGATION ---------
-------------------------------
------------------------------->
-    <div id="header" class="two columns">
-                    <div id="header">
-                    </div>
+        <div id="background-image">
+        </div>
 
+        <div id="header">
+                    
                     <script>
                     $(function(){
                       $("#header").load("header.html");
                     });
                     </script>
     </div>
-    <a title="link to location" target="_blank" href="https://www.google.com/maps/place/Lookout+Arts+Quarry/@48.6405778,-122.3599909,17z/data=!3m1!4b1!4m5!3m4!1s0x54850a5b89e91183:0xe65db2b2fed132d0!8m2!3d48.6405778!4d-122.3578022" id="dateinfo" class="six columns">
-    <h2 id="date">May 12-13, 2018 </h2>
-    <h2 class="date">Noon to noon at the lookout arts quarry</h2>
-    </a>
-<!-- -------------------------
-------------------------------
-----------PAGE CONTENT--------
-------------------------------
------------------------------->
-            <div id="sponsors">
-            <p class="sponsor desktop">Sponsors:</p>
-            <a href="https://aslanbrewing.com/"><img class="sponsor" src="css/img/sponsors/aslan.png"></a>
-            
-            <a href="https://www.birchequipment.com/"><img class="sponsor" src="css/img/sponsors/birch.png"></a>
-            
-            <a href="http://www.groovemerchantnorthwest.com/"><img class="sponsor" src="css/img/sponsors/gmnw.PNG"></a>
-            
-            <a href="http://www.kombuchatown.com/"><img class="sponsor" src="css/img/sponsors/kombuchatown.png"></a>
-            
-            <a href="https://www.nwfolklife.org/"><img class="sponsor" src="css/img/sponsors/nwfl.png"></a>
-            
-            <a href="http://www.bellinghamherald.com/"><img class="sponsor" src="css/img/sponsors/blh.jpg"></a>
-            
-            <a href="https://www.earthnovamusic.com/"><img class="sponsor" src="css/img/sponsors/earthnova.png"></a>
-            
-            
-            
-            </div>
-            <div id=footer style="display:none">&copy; BAMF 2018</div>
+        
+        <div id="wrapper" class="container">
 
-</div>
+        <div id="content" class="twelve columns">
+            <img src="css/img/48hr.svg" width="100%">
+            
+            
+            
+        
+            
+        </div>
+        </div>
         
 
     

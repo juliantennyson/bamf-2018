@@ -1,146 +1,88 @@
-<script>
-    
-    if (top.location.pathname === '/index.html' || top.location.pathname === '/')
-{
-   $('#expand').addClass('initialH');
-$('#datelink').addClass('initialH');
-}
-    
-    if (top.location.pathname !== '/index.html' && top.location.pathname !== '/')
-{
-$('#datelink').slideDown(1000);
-}
-
-    if (top.location.pathname === '/about.html')
-    
-{
-$('#aexpand').removeClass("initialH");
-}
-    
-    
-$(document).ready(function(){
+<header class="twelve columns">
+        <nav>
         
- $('#word').mouseenter(function(){
-     $('#blue').addClass("rotate");
-     $('#black').addClass("rotate");
+        <a href="index.html"><div id="mobilelogo">
+            <img id="moblog" src="css/img/mobilelogo.png">
+        </div></a>
+        
+        <div id="navleft">
+                <a href="volunteer.html#content"><div id="volunteer" class="navitem">Get Involved</div></a>
+                <a href="tickets.html#content"><div id="ticketsclick" class="navitem"><div class="soon">coming soon</div>Tickets</div></a>
 
-     $(this).css("pointer-events", "none");
-     
-     setTimeout(function(){
-    $('#blue').removeClass("rotate");
-    $('#black').removeClass("rotate");
-
-     $('#word').css("pointer-events", "auto");
-
-     }, 1000)
- });
-      
-         
-$('#nav').click(function(){
-    $('#expand').slideToggle(400);
-    });
-    
-$('#about').click(function(){
-    $('#aexpand').slideToggle(400);
-    });
-    
-    $('#tickets').click(function(){
-    $('#texpand').slideToggle(400);
-    });
-
-    
-    
-    
-    });
-
-</script>        
-
-<div id="halftone">
-</div>
-<a href="index.html">
-            
-            <div id="mobilehead"><img id="mobilelogo" src="css/img/mobilelogo.svg"></div>
-            
-                <div id="logo" title="be a BAMF!">
-                    <img id="word" class="logo" src="css/img/bword.svg">
-                    <img id="blue" class="logo"  src="css/img/bblue.svg">
-                    <img id="black" class="logo" src="css/img/bblack.svg">
-                </div>
-                </a>
-                <a title="link to map" target="_blank" href="https://www.google.com/maps/place/Lookout+Arts+Quarry/@48.6405778,-122.3599909,17z/data=!3m1!4b1!4m5!3m4!1s0x54850a5b89e91183:0xe65db2b2fed132d0!8m2!3d48.6405778!4d-122.3578022" >
-                    
-               <h1 id="datelink" class="date2 initialH">May 12-13, 2018<br>Noon to Noon at the Lookout Arts Quarry</h1></a>
+            </div>
+            <div id="logo">
+                <a href="index.html"><div id="logobox">
+                <img id="pinwheel" class="logoimage" src="css/img/pinwheel.svg">
                 
-                <nav id="nav">
-                    <p class="navlink">NAVIGATION</p>
+                <img id="bamf" class="logoimage" src="css/img/bamf.svg">
+                <img id="nineteen" class="logoimage" src="css/img/2019.svg">
+                </div></a>
+                
+
+            </div>
+            
+        
+            <div id="navright">
+                <div id="about" class="navitem">
+                    About
+                    <div id="dropdown" class="initialH">
+                        <ul>
+                            <li class="subitem"><div class="soon">coming soon</div>Lineup</li>
+                            <li class="subitem">What to Bring</li>
+                            <li class="subitem">Our Story</li>
+                        </ul>
                     
-                </nav>
-                <nav id="expand">
-                   
-                    <a href="getinvolved.html"><p id="involved" class="link">GET INVOLVED</p></a>
-                    
-<p id="tickets" class="link">TICKETS</p>
+                    </div>
+                
+                </div>
+                <a href="gallery.html#content"><div class="navitem" id="gallery"><div class="soon">coming soon</div>Gallery</div></a>
+            </div>
+        </nav>
+               <div id="date">May 17-19, 2019 @ the Lookout Arts Quarry</div>
 
-<div id="texpand" class="initialH">
-    <a href="tickets.html"><p class="sublink">Buy Tickets</p></a>
-
-    <a href="tickets.html#info"><p class="sublink">Ticket Info</p></a>
-</div>
-                   
-<a href="lineup.html"><p id="lineup" class="link">LINEUP</p></a>
-                   
-<p id="about" class="link">ABOUT</p>
-
-<div id="aexpand" class="initialH">
-
-    <a href="about.html#whatis"><p class="sublink">What is BAMF?</p></a>
-
-    <a href="about.html#whattoexpect"><p class="sublink">What to Expect</p></a>
-    
-    <a href="about.html#parkingcamping"><p  class="sublink">Parking and Camping</p></a>
-
-    <a href="about.html#gettingthere"><p  class="sublink">Getting to BAMF</p></a>
-    
-    <a href="about.html#SEAT"><p class="sublink">SEAT and safety</p></a>
-
-    <a href="about.html#checklist"><p class="sublink">BAMF Checklist</p></a>
-    
-    <a href="about.html#accessibility"><p class=" sublink">Accessibility</p></a>
+</header>
 
 
-</div>
-                     
-<a href="gallery.html"><p id="about" class="link">GALLERY</p></a>
-                     
-
-                </nav>
-    
-
-<div id="socmed">
-    
-    <a href="https://www.facebook.com/bellinghamartsandmusicfest/" target="_blank"><img id="fb" class="socmed" src='css/img/fbicon.svg'></a>
-    
-    <a href="https://www.instagram.com/bamf.bham/" target="_blank"><img id="ig" class="socmed" src='css/img/igicon.svg'></a>
-
-    <script>
-    $('#fb').mouseenter(function(){
-    $(this).attr("src","css/img/fbhover.svg");
-    });
+<script>
+    $(document).ready(function(){
         
-    $('#fb').mouseleave(function(){
-    $(this).attr("src","css/img/fbicon.svg");
-    });
+        $("#about").click(function(){
+            $("#dropdown").slideToggle(200);    
+        });
+        if ($(window).width() > 500)
+        {
+        if (top.location.pathname === '/about.html')
+        {
+            $('#about').css('background-color','#0f045e');
+            $('#about').css('color','white');
+            
+        };
         
-    $('#ig').mouseenter(function(){
-    $(this).attr("src","css/img/ighover.svg");
-    });
+        if (top.location.pathname === '/gallery.html')
+        {
+            $('#gallery').css('background-color','#0f045e');
+            $('#gallery').css('color','white');
+            
+        };
         
-    $('#ig').mouseleave(function(){
-    $(this).attr("src","css/img/igicon.svg");
+        if (top.location.pathname === '/tickets.html')
+        {
+            $('#ticketsclick').css('background-color','#0f045e');
+            $('#ticketsclick').css('color','white');
+            
+        };
+        
+        if (top.location.pathname === '/volunteer.html')
+        {
+            $('#volunteer').css('background-color','#0f045e');
+            $('#volunteer').css('color','white');
+            
+        };
+        
+        };
+        
+        
     });
-    </script>
     
     
-
-</div>
-
+</script>
