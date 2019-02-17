@@ -144,7 +144,7 @@ width:60%;
     background-image:url(img/7946.jpg);
     background-position:center;
 
-    z-index:-2;
+    z-index:-5;
     pointer-events:none;
     position:fixed;
 }
