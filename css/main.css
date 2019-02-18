@@ -166,6 +166,7 @@ width:60%;
     height:100%;
     padding:20px;
     margin-bottom:50px;
+    pointer-events: all !important;
     
 }
 
@@ -343,9 +344,10 @@ top:150px;
 }
 
 #wrapper{
-pointer-events: none;
 position:relative;
 top:150px;
+max-width: 960px;
+margin:0 auto;
 }
     
 }
