@@ -211,7 +211,6 @@ h3{
 }
 
 #wrapper{
-pointer-events: none;
 position:relative;
 top:150px;
 }
