@@ -16,6 +16,12 @@ ul{
 body{
 height:150px;}
 
+.bodytext{
+color:white;
+text-align: left;
+line-height: 2
+}
+
 #date{
     position:static;
     text-align: center;
@@ -131,7 +137,12 @@ width:60%;
 }
 
 .subitem{
-    
+    color:white;
+    text-decoration: none !important;
+}
+
+.subitem a{
+    text-decoration: none;
 }
 
 .subitem:hover{
