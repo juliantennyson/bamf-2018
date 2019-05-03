@@ -16,10 +16,21 @@ ul{
 body{
 height:150px;}
 
+.bodylist{
+list-style-type:circle;
+text-align: left;
+color:white;
+}
 .bodytext{
 color:white;
 text-align: left;
-line-height: 2
+line-height: 2;
+    list-style: circle;
+}
+
+ul .bodytext{
+
+    text-indent: 1;
 }
 
 #date{
@@ -180,6 +191,11 @@ width:60%;
     margin-bottom:50px;
     pointer-events: all !important;
     
+}
+
+.anchor{
+    padding-top: 180px;
+    margin-top: -180px;
 }
 
 
