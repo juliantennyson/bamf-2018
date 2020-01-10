@@ -1,6 +1,6 @@
 nav{
     width:100%;
-    font-family:'Bangers', sans-serif;
+    font-family:'Mouse Memoirs', sans-serif;
     font-size:3em;
 }
 
@@ -36,7 +36,7 @@ ul .bodytext{
 #date{
     position:static;
     text-align: center;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Lexend Exa', sans-serif;
     color:white;
 
 }
@@ -202,7 +202,7 @@ width:60%;
 
 
 h1{
-  font-family:"Bangers", sans-serif;
+  font-family:"Mouse Memoirs", sans-serif;
     color:white;
     letter-spacing:2px;
     font-size:3em;
@@ -220,7 +220,7 @@ h3{
   padding: 0 30px;
   color:#0f045e;
   text-align: center;
-  font-family:"Krona One", sans-serif;
+  font-family:"Lexend Exa", sans-serif;
   font-size: 10px;
   font-weight: 600;
   line-height: 60px;
@@ -283,7 +283,9 @@ top:150px;
     #mobilelogo{
     display:none;
     }
-    
+    #volunteer{
+        float:right;
+    }
     #navleft{
         position:relative;
         top:40%;
