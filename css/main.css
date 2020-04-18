@@ -163,13 +163,15 @@ width:60%;
 #background-image{
     height:100vh;
     width:100vw;
-    background-image:url(img/ogbg.jpg);
+    background-image:url(img/webbg.png);
     background-position:center;
     background-size:cover;
 
     z-index:-5;
     pointer-events:none;
     position:fixed;
+    opacity:.7;
+    background-color:black;
 }
 
 .initialH{
